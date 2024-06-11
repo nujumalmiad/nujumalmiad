@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "Rubik", sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header nav {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+header nav a.logo div.logo-image {
+  width: 100px;
+  height: 100px;
+}
+header nav a.logo div.logo-image img {
+  width: 100%;
+  height: 100%;
+}
+header nav a.logo div.logo-text {
+  color: #825107;
+}
+header nav a.logo div.logo-text h1.arabic {
+  text-align: center;
+}
+header nav div.nav-menus {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+header nav div.nav-menus ul.nav-icons {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+header nav div.nav-menus ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+header nav div.nav-menus ul li a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+div.container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  position: relative;
+  padding: 5%;
+}
+main div.underdev-popup-wrapper {
+  transition: all 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main div.underdev-popup-wrapper div.underdev-popup {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1e5c3;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+main div.underdev-popup-wrapper div.underdev-popup header {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+main div.underdev-popup-wrapper div.underdev-popup header span {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+main div.underdev-popup-wrapper div.underdev-popup header span i {
+  color: #825107;
+}
+main div.underdev-popup-wrapper div.underdev-popup header span:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+main div.underdev-popup-wrapper div.underdev-popup main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+main div.underdev-popup-wrapper div.underdev-popup main .popup-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main div.underdev-popup-wrapper div.underdev-popup main .popup-content h2 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #825107;
+}
+main div.underdev-popup-wrapper.show-underdev-popup-wrapper {
+  transform: scale(1);
+  opacity: 1;
+}
+main div.underdev-popup-wrapper.hide-underdev-popup-wrapper {
+  transform: scale(0);
+  opacity: 0;
+}
+
+/*# sourceMappingURL=css.map */

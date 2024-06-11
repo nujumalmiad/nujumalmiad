@@ -1,0 +1,10 @@
+<main id="main" class="main">
+  <% if (visit <= 1) { %> <%- include('partials/underdev') %> <% } else { %>
+  <p style="display: none">
+    Visit count is less than or equal to <%= visit %>. Partial not included.
+  </p>
+  <% } %> 
+  
+  
+  <%- include("partials/slider") %>
+</main>

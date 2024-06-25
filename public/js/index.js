@@ -29,8 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Header Scolling
 });
 
-
 window.addEventListener("scroll", () => {
-  const scrolled = window.scrollY
-  console.log("Scrolled" +  scrolled);
+  const scrolled = window.scrollY;
+  console.log("Scrolled" + scrolled);
 });

@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "sass-index":"sass public/css/scss/index.scss public/css/css/index.css --watch"
+    "sass-index": "sass public/css/scss/index.scss public/css/css/index.css --watch",
+    "sass-contact": "sass public/css/scss/contact.scss public/css/css/contact.css --watch",
+    "sass-about": "sass public/css/scss/about.scss public/css/css/about.css --watch"
   },
   "keywords": [],
   "author": "",
